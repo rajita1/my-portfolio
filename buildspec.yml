@@ -1,18 +1,15 @@
 version: 0.1
 
 phases:
-  pre_build:
-    commands:
-      - npm install
-      - npm test
   build:
     commands:
-      - npm run webpack
+      - echo Nothing to do stylesheet
+      -npm install
+      -npm run webpack
+
 artifacts:
   files:
-    - index.html
-    - favicon.ico
-    - RobinNorwood-Resume.pdf
-    - styles/main.css
-    - images/*
-    - dist/bundle.js
+   -index.html
+   -styles/main.css
+   -images/*
+   -dist/bundle.js
